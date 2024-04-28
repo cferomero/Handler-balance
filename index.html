@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finances</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/itemList.css">
+</head>
+<body>
+    <header>
+        <h2 class="title__input--insert">Insert a Value.</h2>
+        <div class="form--insert--resources">
+            <input 
+                type="number" 
+                id="Input__insert--resources" 
+                class="Input__insert--resources" 
+                placeholder="Insert a value"
+            >
+            <small class="error--message">Value Can't be 0.</small>
+            <textarea  
+                id="input--description--resource" 
+                cols="30" rows="2" 
+                minlength="3" maxlength="60" 
+                placeholder="Insert a description"
+            ></textarea>
+            <div class="Buttons__actions--inputs">
+                <button type="button" class="buttons__ads btn--income income" title="Incomes">
+                    <span class="material-symbols-outlined">
+                        attach_money
+                    </span>
+                </button>
+                <button type="button" class="buttons__ads btn--expenses expenses" title="expenses">
+                    <span class="material-symbols-outlined">
+                        money_off
+                    </span>
+                </button>
+                <button type="button" class="buttons__ads btn--transfer transfer" title="Transfer to Pocket">
+                    <span class="material-symbols-outlined">
+                        savings
+                    </span>
+                </button>
+                <button type="button" class="buttons__ads btn--transferAccount transferAccount" title="Transfer to Account">
+                    <span class="material-symbols-outlined">
+                        currency_exchange
+                    </span>
+                </button>
+                <button type="button" class="buttons__ads btn--payPocket payPocket" title="Send to Pocket">
+                    <span class="material-symbols-outlined">
+                        monetization_on
+                    </span>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+    <main class="main__section--elements">
+        <section class="section__total--price">
+            <h4 id="title--total--balance">Current balance</h4>
+            <!-- <h3 class="totalPrice">0</h3> -->
+            <section class="section__pocket--price">
+                <h4>Pocket</h4>
+                <h3 class="totalPricePocket">0</h3>
+            </section>
+        </section>
+        <h4 id="title--transaction__history">Transaction history</h4>
+        <ul class="list__elements">
+        </ul>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

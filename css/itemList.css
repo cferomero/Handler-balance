@@ -1,0 +1,94 @@
+.main__section--elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* margin-top: 1rem; */
+}
+.main__section--elements .list__elements {
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 3rem;
+}
+.list__elements .itemList {
+    padding: 1rem;
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.55);
+    border-radius: .4rem;
+}
+.div__item--resource {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.div__item--resource .btn--status {
+    font-size: 1.5rem;
+}
+.div__item--resource .income { color: #16a085;}
+.div__item--resource .expenses { color: #c0392b;}
+.div__item--resource .transfer { color: #2980b9;}
+.div__item--resource .transferAccount { color: #f39c12;}
+.div__item--resource .payPocket { color: #2c3e50; }
+
+.div__item--resource .div__content--description {
+    width: 80%;
+    text-align: center;
+}
+.div__item--resource .content--resource--description {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.div__item--resource .content--price {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: "Reddit Mono", monospace;
+}
+
+.main__section--elements .section__total--price {
+    /* margin-top: .5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+.section__total--price h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.section__total--price .totalPrice {
+    font-family: "Reddit Mono", monospace;
+    font-size: 2.5rem;
+    color: #0a3d62;
+}
+
+/*section Bolsillo*/
+.section__pocket--price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.section__pocket--price h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+.section__pocket--price .totalPricePocket {
+    font-family: "Reddit Mono", monospace;
+    font-size: 1.7rem;
+    color: #0a3d62;
+}
+
+@keyframes btnStatusUpdate {
+    
+}
